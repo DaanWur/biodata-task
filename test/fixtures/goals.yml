@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  targetDate: 2023-07-26 14:23:18
+  description: MyString
+  targetValue: MyString
+  startingValue: MyString
+  timeFrame: MyString
+  complemetionRate: MyString
+
+two:
+  targetDate: 2023-07-26 14:23:18
+  description: MyString
+  targetValue: MyString
+  startingValue: MyString
+  timeFrame: MyString
+  complemetionRate: MyString

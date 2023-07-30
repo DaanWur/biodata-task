@@ -1,0 +1,47 @@
+<%= form_with(model: goal) do |form| %>
+  <% if goal.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(goal.errors.count, "error") %> prohibited this goal from being saved:</h2>
+
+      <ul>
+        <% goal.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :targetDate, style: "display: block" %>
+    <%= form.datetime_field :targetDate %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.label :targetValue, style: "display: block" %>
+    <%= form.text_field :targetValue %>
+  </div>
+
+  <div>
+    <%= form.label :startingValue, style: "display: block" %>
+    <%= form.text_field :startingValue %>
+  </div>
+
+  <div>
+    <%= form.label :timeFrame, style: "display: block" %>
+    <%= form.text_field :timeFrame %>
+  </div>
+
+  <div>
+    <%= form.label :complemetionRate, style: "display: block" %>
+    <%= form.text_field :complemetionRate %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
